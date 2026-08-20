@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS nodes (
+  id TEXT PRIMARY KEY,
+  type TEXT NOT NULL,
+  x REAL NOT NULL,
+  y REAL NOT NULL,
+  w REAL NOT NULL,
+  h REAL NOT NULL,
+  content TEXT DEFAULT '',
+  fill TEXT DEFAULT '',
+  created_by TEXT DEFAULT '',
+  created_at INTEGER NOT NULL
+);

@@ -1,9 +1,38 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "stytrix-test",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-08-20",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "single-page-application"
-  }
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "stytrix-db",
+      "database_id": "d947b9ec-0db5-4df9-8caf-dcb93cd349a9"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "stytrix-files"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "ROOM",
+        "class_name": "CanvasRoom"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["CanvasRoom"]
+    }
+  ]
 }
