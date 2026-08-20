@@ -167,6 +167,8 @@ function App() {
   }
 
   const onCanvasPointerDown = (e: React.PointerEvent) => {
+    // 點空白處時若還在編輯文字，先把內容送出（textarea 被卸載時不會觸發 blur）
+    if (editingId) commitText(editingId)
     setSelectedId(null)
     setEditingId(null)
     dragRef.current = {
@@ -278,6 +280,7 @@ function App() {
         {Object.values(nodes).map((n) => (
           <div
             key={n.id}
+            data-id={n.id}
             className={`node node-${n.type} ${selectedId === n.id ? 'selected' : ''}`}
             style={{
               left: n.x,
