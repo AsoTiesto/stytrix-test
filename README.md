@@ -2,11 +2,11 @@
 
 ## 部署網址
 
-（待部署後填入）
+https://stytrix-test.stytrix-test.workers.dev
 
 ## 已完成關卡
 
-- [ ] L0 上線 — public repo + React app 部署到 Cloudflare
+- [x] L0 上線 — public repo + React app 部署到 Cloudflare
 - [ ] L1 畫布 — 新增矩形與文字節點、拖曳移動、點選選取
 - [ ] L2 存檔 — 節點寫入 D1，重整後內容還在
 - [ ] L3 協作 — 多瀏覽器即時同步
