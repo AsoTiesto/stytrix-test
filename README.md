@@ -10,7 +10,7 @@ https://stytrix-test.stytrix-test.workers.dev
 - [x] L1 畫布 — 新增矩形與文字節點、拖曳移動、點選選取
 - [x] L2 存檔 — 節點寫入 D1，重整後內容還在
 - [x] L3 協作 — 多瀏覽器即時同步，含他人游標顯示
-- [ ] L4 登入 — Google OAuth，節點記錄建立者
+- [x] L4 登入 — Google OAuth，畫面顯示登入者，節點記錄建立者
 - [x] L5 上傳 — 圖片存進 R2，畫布顯示，重整後仍在
 
 ## AI 開發工作流說明
