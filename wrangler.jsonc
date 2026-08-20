@@ -8,6 +8,9 @@
     "not_found_handling": "single-page-application",
     "run_worker_first": ["/api/*"]
   },
+  "vars": {
+    "GOOGLE_CLIENT_ID": "1038601001615-q8ia2b0kjsfa5f20lf869ok8cc666e0c.apps.googleusercontent.com"
+  },
   "d1_databases": [
     {
       "binding": "DB",
